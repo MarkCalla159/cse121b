@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Final Project Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project06.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html"  class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>Final Project Application</h1>
+
+    <div class="select">
+      <select id="filtered" title="Choose a data filter.">
+        <option value="" disabled selected>Filter Teams Group</option>
+        <option value="groupA">Group A</option>
+        <option value="groupB">Group B</option>
+        <option value="groupC">Group C</option>
+        <option value="groupD">Group D</option>
+        <option value="groupE">Group E</option>
+        <option value="groupF">Group F</option>
+        <option value="groupG">Group G</option>
+        <option value="groupH">Group H</option>
+        <option value="moreThan11Goals">Goals>11</option>
+      </select>
+      <div class="select_arrow"></div>
+    </div>
+
+    <div id="teams">
+    </div>
+  </main>
+
+  <footer>
+    &copy;<span id="year"></span> | Week 06 - UEFA CHAMPIONS LEAGUE | CSE 121b
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project06.js"></script>
+</body>
+
+</html>
